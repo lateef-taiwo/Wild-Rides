@@ -1,14 +1,10 @@
 name: Wild Rides CI
 
-#// single
-on: [push]
-
-# multiple
-on: [push, fork]
-
 on:
+    push:
+    fork:
     schedule:
-        - cron: "0 */12 * * *"
+      - cron: "0 */12 * * *"
 
 jobs:
     build:
